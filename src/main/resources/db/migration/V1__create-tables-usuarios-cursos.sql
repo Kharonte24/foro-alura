@@ -1,0 +1,14 @@
+CREATE TABLE usuarios(
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(80) NOT NULL ,
+    email VARCHAR(100) NOT NULL UNIQUE ,
+    contrasena VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE cursos(
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(125) NOT NULL ,
+    categoria VARCHAR(80) NOT NULL,
+    PRIMARY KEY (id)
+);
